@@ -1,0 +1,54 @@
+{% extends 'base.html'%}
+    {% block content%}
+    {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+
+<div style="background: url('/media/m6.jpg'); background-repeat:no-repeat;background-size:cover; color: white; height:600px; width: 100;  ">
+<br> 
+<br>
+<br> 
+<br>
+    <div class="row">
+       <h3 align="center" style="color:firebrick;"><u>User Log In</u></h3> <br><br>
+<div class="container" style="background:;width:50%;">
+   <br>
+    <form class="form-signin" action="/Login/" method="POST">
+                {% csrf_token %}
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Enter first name" name="U_name">
+                <label for="floatingInput" style="color:black;">Username:</label>
+            </div>
+        </div>
+       </div>
+       <br>
+       <div class="row"> 
+        <div class="col-md-6 offset-md-3">
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Enter last name" name="U_pwds">
+                <label for="floatingPassword" style="color:black;">Password:</label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+                       <a href="/UserRegisteration/"><label class="custom-control-label" for="customCheck1" style="color:firebrick;">New User/Register</label></a>
+              <br>   <br>  
+        <center><input type="submit" class="btn btn-dark" style="background-color:firebrick" value="Log In"></center>
+        </div>
+  </div>
+<br>
+</div>
+
+  
+</div>
+<br>
+
+    {% endblock%}

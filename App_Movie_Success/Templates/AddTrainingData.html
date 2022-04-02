@@ -1,0 +1,267 @@
+{% extends 'base.html'%}
+    {% block content%}
+    {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+<div style="background: url('/media/m11.jpg'); background-repeat:no-repeat;background-size:cover;  height:550px; width: 100%;">
+<h3 align="center" style="color:white;"><u>Add Training Data...</u></h3><br>
+<div class="container" style="background-color:transparent;width:50%;">
+<form class="form-signin" action="/AddTrainingData/" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-floating mb-3">
+                <input type="text" class= "form-control" id="floatingInput" name="M_name" placeholder="Enter first name">
+                <label for="floatingInput" style="color:black;">Movie Name:</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" name="M_Writer">
+                    <option selected>Select Writer Name...</option>
+                    <option value="1">Javed Aktar</option>
+                    <option value="2">Zoya Akhtar</option>
+                    <option value="3">Himanshu Sharma</option>
+                    <option value="4">Urmi Juvekar</option>
+                    <option value="5">Sandeep Srivastava</option>
+                    <option value="6">Jaideep Sahni</option>
+                    <option value="7">Zeishan Quadri</option>
+                    <option value="8">Ayan Mukerjee</option>
+                    <option value="9">Vikramaditya Motwane</option>
+                    <option value="10">Varun Grover</option>
+                    <option value="11">Sujoy Ghosh</option>
+                    <option value="12">Shashank Khaitan</option>
+                    <option value="13">Milap Zaveri</option>
+                    <option value="14">Yunus SajawalL</option>
+                    <option value="15">Raoul Randolf</option>
+                    <option value="16">Dilip Shukla</option>
+                    <option value="17">R Balki</option>
+                    <option value="18">Farhad Samji</option>
+                    <option value="19">Sandeep Shrivastava</option>
+                    <option value="20">Arjit Biswas</option>
+                    <option value="21">Sriram Raghavan</option>
+                    <option value="22">Siddharth Anand</option>
+                    <option value="23">Juhi Chaturvedi</option>
+                </select>
+                <label for="floatingInput" style="color:black;">Writer Name:</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" name="M_Producer">
+                    <option selected>Select Producer Name...</option>
+                    <option value="1">Gauri Khan</option>
+                    <option value="2">Karan Johar</option>
+                    <option value="3">Aditya Chopra</option>
+                    <option value="4">Ritesh Sidhwani</option>
+                    <option value="5">Ronnie Screwala</option>
+                    <option value="6">Dinesh Vijan</option>
+                    <option value="7">Shabbir Boxwala</option>
+                    <option value="8">Vidhu Vinod Chopra</option>
+                    <option value="9">Divya Khosla Kumar</option>
+                    <option value="10">Anurag Kashyap</option>
+                    <option value="11">Sooraj Bharjatya</option>
+                    <option value="12">Bhushan Kumar</option>
+                    <option value="13">Boney Kapoor</option>
+                    <option value="14">Mahesh Bhatt</option>
+                    <option value="15">Sanjay Leela Bhansali</option>
+                    <option value="16">Rakeysh Omprakash Mehra</option>
+                    <option value="17">Ekta Kapoor</option>
+                    <option value="18">Mani Ratnam</option>
+                    <option value="19">David Dhawan</option>
+                    <option value="20">Ajay Bijli</option>
+                    <option value="21">Patrick O'Neill</option>
+                </select>
+                <label for="floatingPassword" style="color:black">Producer Name:</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" name="M_Director">
+                    <option selected>Select Director Name...</option>
+                    <option value="1">Rohit Shetty</option>
+                    <option value="2">Siddharth Anand</option>
+                    <option value="3">Zoya Akhtar</option>
+                    <option value="4">Aditya Dhar</option>
+                    <option value="5">Sriram Raghavan</option>
+                    <option value="6">Jagan Shakti</option>
+                    <option value="7">Abhinav Kashyap</option>
+                    <option value="8">Ashutosh Gowarike</option>
+                    <option value="9">Rajkumar Hirani</option>
+                    <option value="10">Nitesh Tiwari</option>
+                    <option value="11">Subhash Kapoor</option>
+                    <option value="12">S. Shankar</option>
+                    <option value="13">Neeraj Pandey</option>
+                    <option value="14">Shoojit Sircar</option>
+                    <option value="15">Nagesh Kukunoor</option>
+                    <option value="16">Nitesh Tiwari</option>
+                    <option value="17">Vikas Bahl</option>
+                    <option value="18">Dibakar Banerjee</option>
+                    <option value="19">Imtiaz Ali</option>
+                    <option value="20">Meghna Gulzar</option>
+                    <option value="21">Vishnuvardhan</option>
+                    <option value="22">Remo D'Souza</option>
+                </select>
+                <label for="floatingPassword" style="color:black">Director Name:</label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-floating mb-3">
+               <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" name="M_actor">
+                    <option selected>Select Actor Name...</option>
+                    <option value="1">Shakrukh Khan</option>
+                    <option value="2">Salman Khan</option>
+                    <option value="3">Hrithik Roshan</option>
+                    <option value="4">Ranveer Singh</option>
+                    <option value="5">Vicky Kaushal</option>
+                    <option value="6">Saif Ali khan</option>
+                    <option value="7">Sidharth Malhotra</option>
+                    <option value="8">Amir Khan</option>
+                    <option value="9">Varun Dhawan</option>
+                    <option value="10">Akshay Kumar</option>
+                    <option value="11">Abhishek Bachchan</option>
+                    <option value="12">Sonu Sood</option>
+                    <option value="13">Ranbir Kapoor</option>
+                    <option value="14">Ajay Devgan</option>
+                    <option value="15">Shahid Kapoor</option>
+                    <option value="16">Ayushman Khurrana</option>
+                    <option value="17">Aditya Roy Kapoor</option>
+                    <option value="18">Rajkumar Rao</option>
+                    <option value="19">Kartik Aryan</option>
+                    <option value="20">Tiger Shroff</option>
+                </select>
+                <label for="floatingInput" style="color:black">Actor Name:</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" name="M_actress">
+                    <option selected>Select Actress Name...</option>
+                    <option value="1">Deepika Padukone</option>
+                    <option value="2">Sara Ali khan</option>
+                    <option value="3">Vaani Kapoor</option>
+                    <option value="4">Alia Bhatt</option>
+                    <option value="5">Priyanka Chopra</option>
+                    <option value="6">Kiara Advani</option>
+                    <option value="7">Shraddha Kapoor</option>
+                    <option value="8">Katrina Kaif</option>
+                    <option value="9">Kareena Kapoor</option>
+                    <option value="10">Anushka Sharma</option>
+                    <option value="11">Sonam Kapoor</option>
+                    <option value="12">Sonakshi Sinha</option>
+                    <option value="13">Yami Gautam</option>
+                    <option value="14">Nushrratt Bharuccha </option>
+                    <option value="15">Taapsee Pannu</option>
+                    <option value="16">Aishwarya Rai</option>
+                    <option value="17">Kirti Sanon</option>
+                    <option value="18">Kajol</optin>
+                    <option value="19">Rani Mukerji</option>
+                    <option value="20">Rakul Preet Singh</option>
+                </select>
+                <label for="floatingPassword" style="color:black">Actress Name:</label>
+            </div>
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" name="M_Mdirector">
+                    <option selected>Select Music Director...</option>
+                    <option value="1">Amar Mohile</option>
+                    <option value="2">Taniskh Bagchi</option>
+                    <option value="3">Vishal–Shekhar</option>
+                    <option value="4">Ankur Tewari</option>
+                    <option value="5">Shashwat Sschdev</option>
+                    <option value="6">Pritam Chakraborty</option>
+                    <option value="7">Himesh Reshammiya</option>
+                    <option value="8">B PRAAK</option>
+                    <option value="9">Shreya GhoshalL</option>
+                    <option value="10">Sachin-Jigar</option>
+                    <option value="11">Amit Trivedi</option>
+                    <option value="12">A.R. Rahman</option>
+                    <option value="13">Ankit Tiwari</option>
+                    <option value="14">Arjit Singh</option>
+                    <option value="15">Anu Malik</option>
+                    <option value="16">Shankar Mahadevan</option>
+                    <option value="17">Sneha Khanwalkar</option>
+                    <option value="18">Sunidhi Chouhan</option>
+                    <option value="19">Vishal Bhardwaj</option>
+                    <option value="20">Mithun Sharma</option>
+                </select>
+                <label for="floatingInput" style="color:black">Music Director:</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="M_budget" name="M_budget">
+                <label for="floatingPassword" style="color:black;">Market Budget:(In Crores)</label>
+            </div>
+        </div>
+    </div>
+   <div class="row">
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+               <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="M_success">
+                   <option selected>Choose...</option>
+                   <option value="HIT">Hit</option>
+                   <option value="FLOP">Flop</option>
+                   <option value="SUPERHIT">Superhit</option>
+               </select>
+                <label for="floatingInput" style="color:black">Movies Success:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+               <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="M_genre">
+                   <option selected>Choose Genre...</option>
+                   <option value="1">Action</option>
+                   <option value="2">Comedy</option>
+                   <option value="3">Drama</option>
+                   <option value="4">Fantasy</option>
+                   <option value="5">Horror</option>
+                   <option value="6">Mystery</option>
+                   <option value="7">Romance</option>
+                   <option value="8">Thriller</option>
+               </select>
+                <label for="floatingInput" style="color:black">Movies Genre:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="floatingInput" placeholder="Enter Username" name="M_date" value="M_date">
+                <label for="floatingInput" style="color:black">Release Date:</label>
+            </div>
+        </div>
+    </div>
+   <div class="row">
+        <div class="col-md-12">
+        <center><input type="submit" class="btn btn-outline-light " style="" value="Add"></center>
+        </div>
+    </div>
+    <br>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+{% endblock %}

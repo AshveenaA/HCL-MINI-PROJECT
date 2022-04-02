@@ -1,0 +1,87 @@
+{% extends 'base.html'%}
+    {% block content%}
+    {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+<div style="background: url('/media/m6.jpg');background-color:; background-repeat:no-repeat;background-size:cover;  height:550px; width: 100%;">
+
+  <br>
+  <br>
+<h3 align="center" style="color:saddlebrown;"><u>Register here!</u></h3><br><br>
+<div class="container" style="background:transparent;width:50%;">
+    <form class="form-signin" action="/UserRegisteration/" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="fname" placeholder="Enter first name">
+                <label for="floatingInput" style="color:black;">First Name:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Enter last name" name="lname">
+                <label for="floatingPassword" style="color:black">Last Name:</label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating">
+                <input type="number" class="form-control" id="floatingPassword" placeholder="Enter last name" name="Age">
+                <label for="floatingPassword" style="color:black">Age:</label>
+            </div>
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="Enter Contact Number" name="phone">
+                <label for="floatingInput" style="color:black">Contact Number:</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingPassword" placeholder="example@gmail.com" name="Eid">
+                <label for="floatingPassword" style="color:black">Email Address:</label>
+            </div>
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Enter Username" name="uname">
+                <label for="floatingInput" style="color:black">Create Username:</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="example@gmail.com" name="pwd">
+                <label for="floatingPassword" style="color:black;">Create Password:</label>
+            </div>
+        </div>
+    </div>
+   <div class="row">
+        <div class="col-md-12">
+            <div class="form-floating mb-3">
+                <input type="file" class="form-control" id="floatingInput" placeholder="Enter Username" name="img" value="">
+                <label for="floatingInput" style="color:black">Upload Your Image</label>
+            </div>
+        </div>
+    </div>
+   <div class="row">
+        <div class="col-md-12">
+        <center><input type="submit" class="btn btn-light " style="background-color:saddlebrown;" value="Register"></center>
+        </div>
+    </div>
+    <br>
+</div>
+
+</div>
+
+{% endblock %}

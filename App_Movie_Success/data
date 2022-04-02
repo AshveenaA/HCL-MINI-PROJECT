@@ -1,0 +1,63 @@
+
+
+<QuerySet [{'MovieActor': 'SHARUKH KHAN'}, {'MovieActor': 'RANVEER SINGH'}, {'MovieActor': 'HRITHIK ROSHAN'}, {'MovieActor': 'RANVEER SINGH'}, {'MovieActor': 'VICKY KAUSHAL'}, {'MovieActor': 'SAIF ALI KHAN'}, {'MovieActor': 'AKSHAY KUMAR'}, {'MovieActor': 'SIDHARTH MALHOTRA '}, {'MovieActor': 'AAMIR KHAN'}, {'MovieActor': 'VARUN DHAWAN'}]>
+<QuerySet [{'MovieActress': 'DEEPIKA PADUKONE'}, {'MovieActress': 'SARA ALI KHAN'}, {'MovieActress': 'VAANI KAPOOR'}, {'MovieActress': 'ALIA BHATT'}, {'MovieActress': 'YAMI GAUTAM'}, {'MovieActress': 'KAREENA KAPOOR'}, {'MovieActress': 'KATRINA KAIF'}, {'MovieActress': 'KIARA ADVANI'}, {'MovieActress': 'ANUSHKA SHARMA'}, {'MovieActress': 'SHRADDHA KAPOOR'}]>
+<QuerySet [{'MovieDirector': 'ROHIT SHETTY'}, {'MovieDirector': 'ROHIT SHETTY'}, {'MovieDirector': 'SIDDHARTH ANAND'}, {'MovieDirector': 'ZOYA AKHTAR'}, {'MovieDirector': 'ADITYA DHAR'}, {'MovieDirector': 'SRIRAM RAGHAVAN'}, {'MovieDirector': 'ROHIT SHETTY'}, {'MovieDirector': 'VISHNUVARDHAN'}, {'MovieDirector': 'RAJKUMAR HIRANI'}, {'MovieDirector': "REMO D'SOUZA"}]>
+<QuerySet [{'MovieProducer': ' GAURI KHAN'}, {'MovieProducer': 'KARAN JOHAR'}, {'MovieProducer': 'ADITYA CHOPRA'}, {'MovieProducer': 'RITESH SIDHWANI'}, {'MovieProducer': 'RONNIE SCREWVALA'}, {'MovieProducer': 'DINESH VIJAN'}, {'MovieProducer': 'KARAN JOHAR'}, {'MovieProducer': 'SHABBIR BOXWALA'}, {'MovieProducer': 'VIDHU VINOD CHOPRA'}, {'MovieProducer': 'DIVYA KHOSLA KUMAR'}]>
+<QuerySet [{'MovieMusic': 'AMAR MOHILE'}, {'MovieMusic': 'TANISHK BAGCHI'}, {'MovieMusic': 'VISHAL–SHEKHAR'}, {'MovieMusic': 'ANKUR TEWARI'}, {'MovieMusic': 'SHASHWAT SACHDEV'}, {'MovieMusic': ' PRITAM CHAKRABORTY'}, {'MovieMusic': ' HIMESH RESHAMMIYA'}, {'MovieMusic': ' B PRAAK'}, {'MovieMusic': 'SHREYA GHOSHAL'}, {'MovieMusic': ' SACHIN–JIGAR'}]>
+
+
+
+
+
+MarketBudget 70
+[ 7  4  3  4 10  5  2  8  0  9  2  6  1]
+[ 2  6  9  0 11  3  4  5  1  7 10  8  2]
+[ 6  6  7 10  1  8  6  9  4  5  3  0  2]
+[ 0  6  1  7  8  4  6  9 11  5  2  3 10]
+[ 5 11 12  7  9  3  2  1 10  4  6  8  0]
+[4 3 6 7 0 5 0 1 8 9 2 0 3]
+
+
+[5 3 2 3 8 4 1 6 0 7]
+[2 6 8 0 9 3 4 5 1 7]
+[3 3 4 7 0 5 3 6 1 2]
+[0 4 1 5 6 2 4 7 8 3]
+[4 8 9 5 6 2 1 0 7 3]
+[4 3 6 7 0 5 0 1 8 9]
+
+'}, {'MovieActor': 'RANVEER SINGH'}, {'MovieActor': 'HRITHIK ROSHAN'}, {'MovieActor': 'RANVEER SINGH'}, {'MovieActor': 'VICKY KAUSHAL'}, {'MovieActor': 'SAIF ALI KHAN'}, {'MovieActor': 'AKSHAY KUMAR'}, {'MovieActor': 'SIDHARTH MALHOTRA '}, {'MovieActor': 'AAMIR KHAN'}, {'MovieActor': 'VARUN DHAWAN'}, {'MovieActor': 'AKSHAY KUMAR', 'SALMAN KHAN''ABHISHEK BACHCHAN'
+<QuerySet [{'MovieActress': 'DEEPIKA PADUKONE'}, {'MovieActress': 'SARA ALI KHAN'}, {'MovieActress': 'VAANI KAPOOR'}, {'MovieActress': 'ALIA BHATT'}, {'MovieActress': 'YAMI GAUTAM'}, {'MovieActress': 'KAREENA KAPOOR'}, {'MovieActress': 'KATRINA KAIF'}, {'MovieActress': 'KIARA ADVANI'}, {'MovieActress': 'ANUSHKA SHARMA'}, {'MovieActress': 'SHRADDHA KAPOOR'}, {'MovieActress': 'VIDYA BALAN'}, {'MovieActress': 'SONAKSHI SINHA'}, {'MovieActress': 'DEEPIKA PADUKONE'}]>
+<QuerySet [{'MovieDirector': 'ROHIT SHETTY'}, {'MovieDirector': 'ROHIT SHETTY'}, {'MovieDirector': 'SIDDHARTH ANAND'}, {'MovieDirector': 'ZOYA AKHTAR'}, {'MovieDirector': 'ADITYA DHAR'}, {'MovieDirector': 'SRIRAM RAGHAVAN'}, {'MovieDirector': 'ROHIT SHETTY'}, {'MovieDirector': 'VISHNUVARDHAN'}, {'MovieDirector': 'RAJKUMAR HIRANI'}, {'MovieDirector': "REMO D'SOUZA"}, {'MovieDirector': 'JAGAN SHAKTI'}, {'MovieDirector': 'ABHINAV KASHYAP'}, {'MovieDirector': 'ASHUTOSH GOWARIKER'}]>
+<QuerySet [{'MovieProducer': ' GAURI KHAN'}, {'MovieProducer': 'KARAN JOHAR'}, {'MovieProducer': 'ADITYA CHOPRA'}, {'MovieProducer': 'RITESH SIDHWANI'}, {'MovieProducer': 'RONNIE SCREWVALA'}, {'MovieProducer': 'DINESH VIJAN'}, {'MovieProducer': 'KARAN JOHAR'}, {'MovieProducer': 'SHABBIR BOXWALA'}, {'MovieProducer': 'VIDHU VINOD CHOPRA'}, {'MovieProducer': 'DIVYA KHOSLA KUMAR'}, {'MovieProducer': 'AKSHAY KUMAR'}, {'MovieProducer': 'ARBAAZ KHAN'}, {'MovieProducer': 'SUNITA GOWARIKER'}]>
+<QuerySet [{'MovieMusic': 'AMAR MOHILE'}, {'MovieMusic': 'TANISHK BAGCHI'}, {'MovieMusic': 'VISHAL–SHEKHAR'}, {'MovieMusic': 'ANKUR TEWARI'}, {'MovieMusic': 'SHASHWAT SACHDEV'}, {'MovieMusic': ' PRITAM CHAKRABORTY'}, {'MovieMusic': ' HIMESH RESHAMMIYA'}, {'MovieMusic': ' B PRAAK'}, {'MovieMusic': 'SHREYA GHOSHAL'}, {'MovieMusic': ' SACHIN–JIGAR'}, {'MovieMusic': 'AMIT TRIVEDI'}, {'MovieMusic': 'SAJID–WAJID'}, {'MovieMusic': ' A. R. RAHMAN'}]>
+
+7  SHARUKH KHAN
+4  RANVEER SINGH
+3  HRITHIK ROSHAN
+4  RANVEER SINGH
+10 VICKY KAUSHAL
+5  SAIF ALI KHAN
+2  AKSHAY KUMAR
+8  SIDHARTH MALHOTRA
+0  AAMIR KHAN
+9  VARUN DHAWAN
+2  AKSHAY KUMAR
+6  SALMAN KHAN
+1  ABHISHEK BACHCHAN
+
+
+ 7  
+ 4  
+ 3  
+ 4 
+ 10  
+ 5  
+ 2 
+ 8  
+ 0 
+ 9  
+ 2  
+ 6  
+ 1 
+ 10
